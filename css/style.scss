@@ -1,0 +1,361 @@
+$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+$font:neue-haas-grotesk-display,sans-serif;
+
+
+body{
+    font-family: $font;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: lighter !important;
+}
+
+/* start header */
+header
+{
+    background: url(../imgs/hero.png);
+    background-size: cover;
+
+    nav
+    {
+        height: 108px;
+        padding: 5px 0;
+        background-color: #000;
+        color: #FFF;
+    }
+    
+    .logo{
+        position: relative;
+    }
+    
+    .logo__image{
+        position: absolute;
+        left: 27px;
+        top: 42px;
+    }
+}
+
+header nav .contact .about-us span,
+header nav .contact .date span
+{
+    font-size: 12px;
+    color: #555;
+}
+header nav .contact i,
+footer .aboutUs i
+{
+    color: #FB3099;
+}
+header nav .contact .social i
+{
+    background-color: #FFF;
+    border-radius: 50%;
+    color: #333;
+    padding: 2px;
+    font-weight: bold;
+}
+header nav .links a
+{
+    text-transform: capitalize;
+}
+
+.links ul li
+{
+   position: relative;
+   padding: 10px 50px;
+}
+.links ul li.active
+{
+   background: url(../imgs/Pfad\ 85.png) center center no-repeat;
+   background-size: 50px;
+}
+.links ul li:not(:last-child)::before
+{
+   position: absolute;
+   content: "";
+   width: 1px;
+   height: 8px;
+   background-color: #333;
+   top: 50%;
+   right: 0px;
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+
+.hero
+{
+    position: relative;
+}
+.hero-content
+{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+.hero-content h1
+{
+    line-height: 43px;
+    text-transform: uppercase;
+    font-size: 3.5em;
+}
+.hero-content h1 span
+{
+    font-weight: bold;
+}
+.hero-content p
+{
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.hero .lass-slider
+{
+    position: absolute;
+    bottom:-80px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.hero .lass-slider h3
+{
+    text-transform: uppercase;
+    color: #FFF;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled
+{
+    display: block;
+}
+.owl-carousel .owl-nav
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+ .owl-carousel .owl-nav .owl-prev,
+ .owl-carousel .owl-nav .owl-next
+{
+    position: absolute;
+    background-color: transparent !important;
+    color: transparent !important;
+}
+ .owl-carousel .owl-nav .owl-next
+{
+    right: 0;
+}
+ .owl-carousel .owl-nav .owl-next::before
+{
+    content: "";
+    position: absolute;
+    top:-10px;
+    left: 10px;
+    border-width: 15px;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+}
+ .owl-carousel .owl-nav .owl-prev
+{
+    left: 0;
+}
+ .owl-carousel .owl-nav .owl-prev::before
+{
+    content: "";
+    position: absolute;
+    top:-10px;
+    right: 10px;
+    border-width: 15px;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+}
+.hero-box
+{
+    height: 800px;
+    position: relative;
+}
+.carousel-indicators
+{
+    top: 500px !important;
+    bottom: unset;
+}
+.carousel-indicators button
+{
+    background-color: #777 !important;
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+.carousel-indicators button.active
+{
+    background-color: #FFF !important;
+}
+
+.content-box
+{
+    padding: 0 2px !important;
+}
+.content-box .img
+{
+    position: relative;
+}
+.content-box .img a
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* End header */
+
+
+/* Start about us */
+.about
+{
+    padding-top: 100px;
+    background: #000 url(../imgs/aboutbg.png) 0% 0% no-repeat;
+    background-size: cover;
+}
+.about .img-box
+{
+    background: url(../imgs/about2.png);
+    background-size: cover;
+}
+.about .about-content
+{
+    padding: 0 50px ;
+    padding-bottom: 100px;
+    color: rgba(255, 255, 255, 0.829);
+}
+.about .about-content h2
+{
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 37px;
+    letter-spacing: 5px;
+}
+.about .about-content p
+{
+    color: rgba(221, 218, 218, 0.808);
+}
+/* End about us */
+
+
+/* start gang section */
+.gang
+{
+    height: 100vh;
+    padding: 50px 0;
+    background: url(../imgs/gang.png) no-repeat;
+    background-size: cover;
+}
+.gang h3
+{
+    color: #FFF;
+    padding-top: 5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(51, 51, 51, 0.781);
+    font-size: 3.5em !important;
+}
+/* End gang section */
+
+
+/* footer */
+footer
+{
+    padding: 50px 0;
+    background-color: #000;
+    color: #FFF;
+}
+
+footer .aboutUs h6
+{
+    font-size: 14px;
+}
+footer .aboutUs span
+{
+    color: #666;
+}
+footer .aboutUs i,
+footer .contact-us i
+{
+    padding-top: 3px;
+}
+footer .contact-us .link
+{
+    background: #fff;
+    height: 40px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+footer .contact-us i
+{
+    display: inline-block;
+    background-color: #D8056B;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 36px;
+}
+footer .contact-us span
+{
+    color: #333;
+    text-align: center;
+}
+
+footer .f-social h5
+{
+    text-transform: uppercase;
+}
+footer .f-social h6
+{
+    color: #666;
+}
+footer .f-social .social-icons
+{
+    padding: 20px 0;
+}
+footer .f-social .social-icons i
+{
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+footer .copy
+{
+    overflow: hidden;
+    color: #666;
+}
+footer .copy span:first-child
+{
+    float: left;
+}
+footer .copy span:last-child
+{
+    float: right;
+}
+
+
+
+/* mainButton */
+.main-a
+{
+    background-color: #D8006B;
+    color: #FFF;
+    padding: 8px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.main-a:hover
+{
+    background-color: #d8006ce0;
+    color: #FFF;
+}
